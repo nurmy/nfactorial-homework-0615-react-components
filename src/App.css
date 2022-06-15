@@ -1,116 +1,148 @@
 :root {
-  --main-bg-color: #151515;
-  --secondary-bg-color: #343434;
-  --main-font-family: DIN, Helvetica, Arial, sans-serif;
+    --main-bg-color: white;
+    --secondary-bg-color: #343434;
+    --main-font-family: DIN, Helvetica, Arial, sans-serif;
 }
 
-
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: start;
+    align-items: start;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+}
+
+p {
+    color: yellow;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Poller One';
 }
 
 input {
-  box-sizing: border-box;
-  height: 10px;
-  font-family: var(--main-font-family);
-  padding: 1rem;
-  background-color: var(--secondary-bg-color);
-  color: white;
+    box-sizing: border-box;
+    height: 10px;
+    font-family: var(--main-font-family);
+    padding: 1rem;
+    background-color: var(--secondary-bg-color);
+    color: white;
 }
 
 hr {
-  background-color: var(--secondary-bg-color);
+    background-color: var(--secondary-bg-color);
 }
 
-
 .links-layout {
-  justify-self: left;
-  position: relative;
-  margin: 1rem;
+    justify-self: left;
+    position: relative;
+    margin: 1rem;
 }
 
 .link {
-  margin: .5rem;
+    margin: 0.5rem;
 }
 
 .search-layout {
-  justify-self: right;
-  position: relative;
-  margin: 1rem;
+    justify-self: right;
+    position: relative;
+    margin: 1rem;
+}
+
+.search-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .search-icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  padding: 4px;
-  position: absolute;
-  box-sizing: border-box;
-  top: 50%;
-  right: .5rem;
-  transform: translateY(-50%);
-  cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 4px;
+    position: relative;
+    box-sizing: border-box;
+    right: 0.5rem;
+    left: -15%;
+    /* transform: translateY(-50%); */
+    cursor: pointer;
 }
 
 .content-layout {
-  display: grid;
-  grid-row-gap: 1em;
-  margin: 1rem;
+    display: grid;
+    grid-row-gap: 1em;
+    margin: 1rem;
 }
 
 .select-item {
-  padding: 1rem;
-  background-color: var(--secondary-bg-color);
-  color: white;
-  cursor: pointer;
+    padding: 1rem;
+    background-color: var(--secondary-bg-color);
+    color: white;
+    cursor: pointer;
 }
 
 .item-list-layout {
-  border: solid 1px var(--secondary-bg-color);
-  display: grid;
-  color: white;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem;
+    border: solid 1px var(--secondary-bg-color);
+    display: grid;
+    color: white;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
 }
 
 .item-image-layout {
-  display: grid;
-  place-items: center;
-  grid-row-gap: 1em;
+    display: grid;
+    place-items: center;
+    grid-row-gap: 1em;
 }
 
 .item-image {
-  width: 30%;
-  border-radius: 10px;
+    width: 30%;
+    border-radius: 10px;
 }
 
 .delete-button {
-  background: red;
-  color: white;
-  padding: 1rem;
-  border: 1px solid  var(--secondary-bg-color);
-  border-radius: 10px;
-  cursor: pointer;
-  width:12rem;
+    background: red;
+    color: white;
+    padding: 1rem;
+    border: 1px solid var(--secondary-bg-color);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 12rem;
 }
 
-.delete-button:active{
-  background-color: brown;
-  transform: translateY(4px);
+.delete-button:active {
+    background-color: brown;
+    transform: translateY(4px);
 }
 
 .favorite-button {
-  background: rgb(50, 43, 122);
-  color: white;
-  padding: 1rem;
-  border: 1px solid  var(--secondary-bg-color);
-  border-radius: 10px;
-  cursor: pointer;
-  width:12rem;
+    background: rgb(50, 43, 122);
+    color: white;
+    padding: 1rem;
+    border: 1px solid var(--secondary-bg-color);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 12rem;
 }
 
-.favorite-button:active{
-  background-color: rgb(37, 33, 81);
-  transform: translateY(4px);
+.favorite-button:active {
+    background-color: rgb(37, 33, 81);
+    transform: translateY(4px);
 }
